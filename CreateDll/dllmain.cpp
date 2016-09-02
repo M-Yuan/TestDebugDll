@@ -18,6 +18,9 @@ BOOL APIENTRY DllMain( HMODULE hModule,
 }
 
 /****************************************************************************************************************************
+
+DllMain 简介
+
     系统是在什么时候调用DllMain函数的呢？静态链接时，或动态链接时调用LoadLibrary和FreeLibrary都会调用DllMain函数。DllMain的第
 二个参数fdwReason指明了系统调用Dll的原因，它可能是:：
 
